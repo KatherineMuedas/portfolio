@@ -1,0 +1,37 @@
+<!-- Portfolio Modals -->
+<% @projects.each_with_index do |project,index| %>
+  <div class="portfolio-modal modal fade" id="portfolioModal<%= index + 1 %>" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2><%= project.title %></h2>
+              <hr class="star-primary">
+              <img src="http://placehold.it/200x200" class="img-responsive img-centered" alt="">
+              <p> <%= project.description %></p>
+              <ul class="list-inline item-details">
+                <li> 
+                  <strong><%=link_to 'View Online', project.website  %>
+                  </strong>
+                </li>
+                <li> 
+                  <strong><%=link_to 'View on GitHub', project.github  %>
+                  </strong>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
