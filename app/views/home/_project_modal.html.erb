@@ -14,19 +14,64 @@
             <div class="modal-body">
               <h2><%= project.title %></h2>
               <hr class="star-primary">
-              <img src="http://placehold.it/200x200" class="img-responsive img-centered" alt="">
+              <div id="carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+
+                <ol class="carousel-indicators">
+                  <% project.pictures.count.times do |i| %>
+                    <li data-target="#carousel" data-slide-to= <%= i %> class=<%='active' if i == 0 %>></li>
+                  <% end %>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <% project.pictures.each_with_index do |picture,index|  %>
+                    <div class="item <%='active' if index == 0 %>">
+                      <%= image_tag picture.photo.url(:large), class:"img-responsive img-centered" %>
+                      <div class="carousel-caption">
+                        <h3><%= picture.title %> </h3>
+                      </div>
+                    </div>
+                  <% end %>  
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+              <br>
+              <p>
+              <% project.pictures.each_with_index do |picture,index|  %>
+                <%= link_to "Delete picture #{index}", project_picture_path(project.id, picture), class: "btn btn-danger",method: :delete, 
+                                data: {
+                                  confirm: 'Are you sure you want to delete this picture?'} %>
+              <%end  %> 
+              </p> 
+
               <p> <%= project.description %></p>
               <ul class="list-inline item-details">
                 <li> 
-                  <strong><%=link_to 'View Online', project.website  %>
+                  <strong><%=link_to 'View Online', project.website, target: "_blank"  %>
                   </strong>
                 </li>
                 <li> 
-                  <strong><%=link_to 'View on GitHub', project.github  %>
+                  <strong><%=link_to 'View on GitHub', project.github, target: "_blank"  %>
                   </strong>
                 </li>
               </ul>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              <p>
+              <%= link_to 'Add photo', new_project_picture_path(project), class: "btn btn-danger" %>
+              <%= link_to 'Delete project', project, class: "btn btn-danger",method: :delete, 
+                                data: {
+                                  confirm: 'Are you sure you want to delete this project?'} %>
+              </p> 
+              <p>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </p>
             </div>
           </div>
         </div>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :projects, except: [:show] 
+  resources :projects, except: [:show] do
+    resources :pictures, only: [:new, :create, :destroy]
+   end 
   #get 'home/index'
   root 'home#index'
 
