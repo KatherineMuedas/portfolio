@@ -11,6 +11,14 @@
        <%= link_to 'Katherine Muedas', root_path, class: "navbar-brand" %>
     </div>
 
+     <% if admin_signed_in? %>
+      <ul>
+        <%= render 'layouts/devise_links' %>
+      </ul>
+      <% end %>  
+
+
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
