@@ -17,6 +17,10 @@ gem "paperclip", "~> 4.2"
 gem 'simple_form'
 gem 'devise'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development do
   gem "better_errors"
   gem "binding_of_caller" 
