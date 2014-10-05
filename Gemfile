@@ -16,6 +16,9 @@ gem 'font-awesome-rails'
 gem "paperclip", "~> 4.2"
 gem 'simple_form'
 gem 'devise'
+gem "figaro"
+gem "aws-sdk"
+gem 'asset_sync'
 
 group :production do
   gem 'rails_12factor'
@@ -35,6 +38,7 @@ group :development do
   gem 'guard-livereload'
   gem 'rack-livereload'
   gem 'ruby_gntp'
+  gem 'xray-rails'
 end
 
 group :development, :test do
