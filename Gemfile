@@ -19,6 +19,8 @@ gem 'devise'
 gem "figaro"
 gem "aws-sdk"
 gem 'asset_sync'
+gem 'haml'
+gem 'mail_form'
 
 group :production do
   gem 'rails_12factor'
@@ -39,6 +41,7 @@ group :development do
   gem 'rack-livereload'
   gem 'ruby_gntp'
   gem 'xray-rails'
+  gem "letter_opener"
 end
 
 group :development, :test do

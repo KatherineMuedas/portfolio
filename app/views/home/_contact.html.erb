@@ -8,39 +8,31 @@
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
-        <form name="sentMessage" id="contactForm" novalidate>
+        <%= render 'layouts/messages' %>
+        <%= simple_form_for @contact, html: {id: "contactForm"} do |f| %>
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Name</label>
-              <input type="text" class="form-control" placeholder="Name" id="name">
+              <%= f.input :name, required: true, placeholder: "Name", input_html: {id: "name", class: "form-control"} %>
             </div>
           </div>
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Email Address</label>
-              <input type="email" class="form-control" placeholder="Email Address" id="email">
+              <%= f.input :email, required: true, label: "Email Address", placeholder: "Email Address", input_html: {id: "email", class: "form-control"} %>
             </div>
           </div>
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Phone Number</label>
-              <input type="tel" class="form-control" placeholder="Phone Number" id="phone">
-            </div>
-          </div>
-          <div class="row control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label>Message</label>
-              <textarea rows="5" class="form-control" placeholder="Message" id="message"></textarea>
+              <%= f.input :message, required: true, placeholder: "Message", input_html: {id: "message", class: "form-control"} %>
             </div>
           </div>
           <br>
           <div id="success"></div>
           <div class="row">
             <div class="form-group col-xs-12">
-              <button type="submit" class="btn btn-success btn-lg">Send</button>
+              <%= f.button :submit,"Send", class: "btn btn-success btn-lg" %>
             </div>
           </div>
-        </form>
+        <% end %>
       </div>
     </div>
   </div>

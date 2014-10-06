@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :projects, except: [:show] do
     resources :pictures, only: [:new, :create, :destroy]
    end 
+  resources "contacts", only: [:create]
   #get 'home/index'
   root 'home#index'
 
