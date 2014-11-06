@@ -20,7 +20,9 @@ gem "figaro"
 gem "aws-sdk"
 gem 'asset_sync'
 gem 'haml'
+gem 'html2haml'
 gem 'mail_form'
+# gem 'rails-i18n'
 
 group :production do
   gem 'rails_12factor'

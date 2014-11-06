@@ -1,0 +1,76 @@
+es:
+  time:
+    formats:
+      short: "%H:%m"
+  current_time: "La hora es %{time}"
+  header:
+    headline: "Bienvenidos a mi portafolio"
+    photo: "yo.jpg"
+  project:
+    headline: "Portafolio"
+  about:
+    headline: "Acerca de mi"
+    content_html: "<p>Mi nombre es Katherine Muedas. Soy una desarrolladora web. Tengo pasion por moda, marketing and programacion. Tambien, amo viajar.</p><p>Tengo un bachiller en Administracion de empresas. Despues de terminar la universidad  decidi estudiar programacion basado en Ruby on Rails. Estoy muy feliz de esa decision porque a travez de programacion encontre una nueva forma de expresar mis ideas y pensamientos.</p>"
+    skills: "Habilidades:"
+    frameworks: "Frameworks:"
+    languages: "Lenguajes:"
+    database: "Base de datos:"
+    ruby_gems: "Ruby Gems:"
+    tools: "Herramientas:"
+    testing: "Testing:"
+    resume: "Descargar Curriculum Vitae"
+    framework_list: |
+      Ruby on Rails
+    languages_list: |
+      HTML
+      CSS
+      SCSS
+      JavaScript
+      CoffeeScript
+      jQuery
+      HAML
+    database_list: |
+      PostgresSQL  
+    ruby_gems_list: |
+      Simple Form
+      Devise
+      Figaro
+      Better Errors
+      Guard
+      Paper Clip
+      Friendly_id
+      Xray-rails
+      Geocoder 
+    tools_list: |
+      Git
+      Pry
+      RVM
+      Sublime Text
+      ZSH
+      iTerm
+      Foundation
+      Bootstrap 3
+      Font-awesome
+      CodeClimate
+      Gemnasium  
+    testing_list: |
+      RSpec
+      MiniTest
+      Factory Girl
+      Ffaker
+      Simplecov  
+
+  contact:
+    headline: "Contactame" 
+    name: "Nombre" 
+    email_address: "Correo electronico" 
+    message: "Mensaje" 
+    send: "Enviar"
+  footer:
+    headline: "Encuentrame en :D"
+  navbar:
+    project: "Proyectos"
+    about: "Acerca de mi"
+    contact: "Contactame"  
+
+

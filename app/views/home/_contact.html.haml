@@ -1,0 +1,24 @@
+%section#contact
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2= t "contact.headline"
+        %hr.star-primary/
+    .row
+      .col-lg-8.col-lg-offset-2
+        = render 'layouts/messages'
+        = simple_form_for @contact, html: {id: "contactForm"} do |f|
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              = f.input :name, required: true, placeholder: t( "contact.name"), input_html: {id: "name", class: "form-control"}
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              = f.input :email, required: true, label: "Email Address", placeholder:t( "contact.email_address"), input_html: {id: "email", class: "form-control"}
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              = f.input :message, required: true, placeholder:t( "contact.message"), input_html: {id: "message", class: "form-control"}
+          %br/
+          #success
+          .row
+            .form-group.col-xs-12
+              = f.button :submit,t( "contact.send"), class: "btn btn-success btn-lg"

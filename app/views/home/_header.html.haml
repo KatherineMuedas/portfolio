@@ -1,0 +1,10 @@
+%header
+  .container
+    .row
+      .col-lg-12
+        / # = t("current_time", time: l(Time.now, format: :short))
+        .intro-text
+          %span.name= t "header.headline"
+          = image_tag t("header.photo"), alt: "profile picture", class: "img-responsive circle-image"
+          %hr.star-light/
+          %span.skills Web Developer

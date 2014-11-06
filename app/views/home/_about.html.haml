@@ -1,0 +1,46 @@
+%section#about.success
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2= t "about.headline"
+        %hr.star-light/
+    .row
+      .col-lg-5.col-lg-offset-1
+        .text-container
+          %p= t"about.content_html"
+          
+      .col-lg-6.text-center
+        %h4= t "about.skills"
+  
+        %p= t "about.frameworks"
+        %p
+          - t("about.framework_list").each_line do |point|
+            %span.label.label-primary= point
+
+        %p= t "about.languages" 
+        %p
+          - t("about.languages_list").each_line do |point|
+            %span.label.label-primary= point
+          
+        %p= t "about.database"
+        %p
+          - t("about.database_list").each_line do |point|
+            %span.label.label-primary= point
+        %p= t "about.ruby_gems"
+        %p
+          - t("about.ruby_gems_list").each_line do |point|
+            %span.label.label-primary= point
+        %p= t "about.tools"
+        %p
+          - t("about.tools_list").each_line do |point|
+            %span.label.label-primary= point
+          
+        %p= t "about.testing"
+        %p
+          - t("about.testing_list").each_line do |point|
+            %span.label.label-primary= point
+          
+      .col-lg-8.col-lg-offset-2.text-center
+        %a.btn.btn-lg.btn-outline{:href => "#"}
+          %i.fa.fa-download
+          =t "about.resume"

@@ -6,7 +6,9 @@ $brand-success: #d94362;
 $gray-lighter: lighten(#000, 93.5%);
 $pink: #fa5ca9;
 $nav-color: #372d3b;
-
+.brand-color{
+  color: $brand-primary;
+}
 // bootstrap overrides
 
 $navbar-default-bg: $nav-color;

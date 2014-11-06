@@ -1,0 +1,35 @@
+%nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header.page-scroll
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'Katherine Muedas', root_path, class: "navbar-brand"
+    - if admin_signed_in?
+      %ul.nav.navbar-nav.navbar-left
+        = render 'layouts/devise_links'
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li.hidden 
+          %a{:href => "#page-top"}
+        %li.page-scroll
+          %a{:href => "#project"} 
+            =t( "navbar.project")
+        %li.page-scroll
+          %a{:href => "#about"} 
+            =t( "navbar.about")
+        %li.page-scroll
+          = link_to t( "navbar.contact"), "#contact"
+        %li.blog-link
+          = link_to "Blog", "http://codingmylife.herokuapp.com", target: "_blank"
+        - if params[:locale] == 'es'
+          %li.en-link
+            = link_to "English", params.merge(locale: :en)
+        - else 
+          %li.es-link
+            = link_to "Español", params.merge(locale: :es)
+
