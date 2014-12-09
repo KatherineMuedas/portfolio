@@ -11,11 +11,11 @@
             .modal-body
               %h2= project.title
               %hr.star-primary/
-              #carousel.carousel.slide{"data-ride" => "carousel"}
+              .carousel.slide{"id" => "carousel-#{project.title.parameterize}", "data-ride" => "carousel"}
                 / Indicators
                 %ol.carousel-indicators
                   - project.pictures.count.times do |i|
-                    <li data-target="#carousel" data-slide-to= #{i} class=#{'active' if i == 0}>
+                    <li data-target="#carousel-#{project.title.parameterize}" data-slide-to= #{i} class=#{'active' if i == 0}>
                 / Wrapper for slides
                 .carousel-inner
                   - project.pictures.each_with_index do |picture,index|
@@ -25,9 +25,9 @@
                         %h3
                           = picture.title
                 / Controls
-                %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel", :role => "button"}
+                %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-#{project.title.parameterize}", :role => "button"}
                   %span.glyphicon.glyphicon-chevron-left
-                %a.right.carousel-control{"data-slide" => "next", :href => "#carousel", :role => "button"}
+                %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-#{project.title.parameterize}", :role => "button"}
                   %span.glyphicon.glyphicon-chevron-right
               %br/
               - if admin_signed_in?
