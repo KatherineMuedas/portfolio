@@ -39,8 +39,8 @@ group :development do
   gem 'guard-bundler'
   gem 'guard-minitest'
 #   gem 'guard-pow'
-  gem 'guard-livereload'
-  gem 'rack-livereload'
+  # gem 'guard-livereload'
+  # gem 'rack-livereload'
   gem 'ruby_gntp'
   gem 'xray-rails'
   gem "letter_opener"

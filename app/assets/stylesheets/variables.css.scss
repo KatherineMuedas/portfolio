@@ -1,26 +1,28 @@
 // Variables
-
+$details: #70c9ab;
+$gray-darker: #727176;
 $brand-primary: #372d3b;
 // $brand-success: #18BC9C;
-$brand-success: #d94362;
+$brand-success: #f8f7f6;
 $gray-lighter: lighten(#000, 93.5%);
-$pink: #fa5ca9;
+$pink: #f15959; //new coral
 $nav-color: #372d3b;
 .brand-color{
   color: $brand-primary;
 }
+$heart: #f89f73;
 // bootstrap overrides
 
-$navbar-default-bg: $nav-color;
+$navbar-default-bg: white;
 $navbar-default-color: white;
 // $navbar-default-border: ;
-$navbar-default-link-color: white;
-$navbar-default-link-hover-color: $brand-success;
+$navbar-default-link-color: $gray-darker;
+$navbar-default-link-hover-color: $details;
 // $navbar-default-link-hover-bg: ;
 $navbar-default-link-active-color: white;
 $navbar-default-link-active-bg: darken($brand-primary, 5%);
-$navbar-default-brand-color: white;
-$navbar-default-brand-hover-color: $brand-success;
+$navbar-default-brand-color: $pink;
+$navbar-default-brand-hover-color: darken($pink, 15%);
 // $navbar-default-brand-hover-bg: ;
 // $navbar-default-toggle-hover-bg: ;
 // $navbar-default-toggle-icon-bar-bg: ;
