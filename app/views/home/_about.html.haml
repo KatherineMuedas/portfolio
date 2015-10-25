@@ -9,36 +9,48 @@
         .text-container
           %p= t"about.content_html"
           
-      .col-lg-6.text-center
-        %h4= t "about.skills"
-  
-        %p= t "about.frameworks"
-        %p
-          - t("about.framework_list").each_line do |point|
-            %span.label.label-primary= point
+      .col-lg-5
+        / %h4= t "about.skills"
 
-        %p= t "about.languages" 
-        %p
-          - t("about.languages_list").each_line do |point|
-            %span.label.label-primary= point
+        / %p= t "about.frameworks"
+        / %h3
+        /   - t("about.framework_list").each_line do |point|
+        /     %span.label.label-default= point
+
+        / %p= t "about.languages" 
+        / %p
+        /   - t("about.languages_list").each_line do |point|
+        /     %span.label.label-primary= point
           
-        %p= t "about.database"
-        %p
-          - t("about.database_list").each_line do |point|
-            %span.label.label-primary= point
-        %p= t "about.ruby_gems"
-        %p
-          - t("about.ruby_gems_list").each_line do |point|
-            %span.label.label-primary= point
-        %p= t "about.tools"
-        %p
-          - t("about.tools_list").each_line do |point|
-            %span.label.label-primary= point
+        / %p= t "about.database"
+        / %p
+        /   - t("about.database_list").each_line do |point|
+        /     %span.label.label-primary= point
+        / %p= t "about.ruby_gems"
+        / %p
+        /   - t("about.ruby_gems_list").each_line do |point|
+        /     %span.label.label-primary= point
+        / %p= t "about.tools"
+        / %p
+        /   - t("about.tools_list").each_line do |point|
+        /     %span.label.label-primary= point
           
-        %p= t "about.testing"
-        %p
-          - t("about.testing_list").each_line do |point|
-            %span.label.label-primary= point
+        / %p= t "about.testing"
+        / %p
+        /   - t("about.testing_list").each_line do |point|
+        /     %span.label.label-primary= point
+        %h4.coral-color= t "about.more"
+        %h4= t "about.favorites"
+        %h3
+          - t("about.favorite_list").each_line do |point|
+            %span.label.label-default= point
+        
+        %h4= t "about.love"
+        %h3
+          - t("about.love_list").each_line do |point|
+            %span.label.label-default= point
+          
+
           
       .col-lg-8.col-lg-offset-2.text-center
         %a.btn.btn-lg.btn-outline{:href => "#"}

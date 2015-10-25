@@ -5,9 +5,9 @@ es:
   current_time: "La hora es %{time}"
   header:
     headline: "Bienvenidos a mi portafolio"
-    photo: "yo.jpg"
+    photo: "profilepic.jpg"
   project:
-    headline: "Portafolio"
+    headline: "Proyectos"
   about:
     headline: "Acerca de mi"
     content_html: "<p>Mi nombre es Katherine Muedas. Soy una desarrolladora web. Tengo pasion por moda, marketing and programacion. Tambien, amo viajar.</p><p>Tengo un bachiller en Administracion de empresas. Despues de terminar la universidad  decidi estudiar programacion basado en Ruby on Rails. Estoy muy feliz de esa decision porque a travez de programacion encontre una nueva forma de expresar mis ideas y pensamientos.</p>"
@@ -19,6 +19,30 @@ es:
     tools: "Herramientas:"
     testing: "Testing:"
     resume: "Descargar Curriculum Vitae"
+    more: "Mas acerca de mi ..."
+    favorites: "Cosas con las que me gustan trabajar:"
+    love: "Otras cosas que me gustan:"
+    love_list: |
+      Viajar
+      Animales
+      Cheescake
+      Cafe
+      Shopping
+      Cocktails
+      Brunch
+      Bailar
+      Karaoke
+    favorite_list: |
+      Ruby on Rails
+      MiniTest
+      Haml
+      PostgresSQL
+      Foundation
+      Git
+      Better Erros
+      Bootstrap
+      Ungit
+      SCSS
     framework_list: |
       Ruby on Rails
     languages_list: |

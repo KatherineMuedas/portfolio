@@ -42,8 +42,8 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family:'Handlee', cursive;;
-  text-transform: uppercase;
+  font-family:'Handlee', cursive;
+  // text-transform: uppercase;
   font-weight: 700;
 }
 
@@ -125,7 +125,7 @@ header {
       }
       .intro-text {
           .name {
-              font-size: 3em;
+              font-size: 38px;
           }
           .skills {
               font-size: 1.75em;
@@ -272,7 +272,7 @@ section.success {
     font-family: 'Handlee', cursive;
     color: white;
     font-size: 20px;
-    border: solid 2px white;
+    // border: solid 2px white;
     background: $pink;
     transition: all 0.3s ease-in-out;
     margin-top: 15px;
@@ -282,7 +282,7 @@ section.success {
     &.active {
         color: white;
         background: darken($pink, 5%);
-        border: solid 2px white;
+        // border: solid 2px white;
     }
 }
 
@@ -458,4 +458,20 @@ footer {
             }            
         }        
     }
+}
+
+.label {
+    display: inline;
+    margin-right: 10px;
+    // margin-left: 20px;
+    padding: 8px;
+    // margin: .80em .80em .80em .80em;
+    // font-size: 75%;
+    font-weight: bold;
+    line-height: 3;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    border: solid 2px $details;
 }

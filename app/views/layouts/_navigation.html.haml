@@ -24,8 +24,8 @@
             =t( "navbar.about")
         %li.page-scroll
           = link_to t( "navbar.contact"), "#contact"
-        %li.blog-link
-          = link_to "Blog", "http://codingmylife.herokuapp.com", target: "_blank"
+        / %li.blog-link
+        /   = link_to "Blog", "http://codingmylife.herokuapp.com", target: "_blank"
         - if params[:locale] == 'es'
           %li.en-link
             = link_to "English", params.merge(locale: :en)

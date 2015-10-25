@@ -7,12 +7,10 @@ $brand-success: #f8f7f6;
 $gray-lighter: lighten(#000, 93.5%);
 $pink: #f15959; //new coral
 $nav-color: #372d3b;
-.brand-color{
-  color: $brand-primary;
-}
 $heart: #f89f73;
 // bootstrap overrides
-
+$label-default-bg: white;
+$label-color: darken($details, 10%);
 $navbar-default-bg: white;
 $navbar-default-color: white;
 // $navbar-default-border: ;
@@ -27,3 +25,13 @@ $navbar-default-brand-hover-color: darken($pink, 15%);
 // $navbar-default-toggle-hover-bg: ;
 // $navbar-default-toggle-icon-bar-bg: ;
 // $navbar-default-toggle-border-color: ;
+
+.brand-color{
+  color: $brand-primary;
+}
+.coral-color{
+  color: $pink;
+}
+.heart-color{
+  color:$pink;
+}

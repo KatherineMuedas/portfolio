@@ -5,13 +5,13 @@ en:
   current_time: "the current time is %{time}"
   header:
     headline: "Welcome to my portfolio"
-    photo: "profilepic.jpg"
+    photo: "portfolio.jpg"
   project:
-    headline: "Portfolio"
+    headline: "Projects"
   about:
     headline: "About"
-    content_html: "<p>My name is Katherine Muedas. A twenty-something Peruvian girl currently living in Park City-Utah (USA). I am web developer and I have a  passion for fashion, marketing and coding. I also love travel.</p><p>I have a bachelor degree in Business Management, after finishing the university I decided to take a programming course based on Ruby on Rails. I am so happy of that decision because I found a new way to express my ideas, my thoughts , my dreams and express myself.</p>"
-    skills: "Skills:"
+    content_html: "<p>My name is Katherine Muedas. I am a software developer currently living in Salt Lake City, Utah.</p> <p> I was born and raised in Peru. </p> <p>I have a bachelor degree in Business Management. After graduating university in Peru, I decided to attend to a programming bootcamp to learn Ruby on Rails.  I had an incredible time.</p><p>Now, I love using my coding skills to solve my everyday problems and make my life better and easier creating fun websites and softwares.</p> <p> I am growing my skills daily and I am excited to take on greater challenges.</p>"
+    skills: "Skills"
     frameworks: "Frameworks:"
     languages: "Languages:"
     database: "Database:"
@@ -19,46 +19,72 @@ en:
     tools: "Tools:"
     testing: "Testing:"
     resume: "Download Resume"
-    framework_list: |
+    more: "Learn more about me ..."
+    favorites: "Things I love to work with:"
+    love: "Others things that I love:"
+    love_list: |
+      Traveling
+      Animals
+      Cheescake
+      Coffee
+      Shopping
+      Cocktails
+      Brunch
+      Dancing
+      Karaoke
+    favorite_list: |
       Ruby on Rails
-    languages_list: |
-      HTML
-      CSS
-      SCSS
-      JavaScript
-      CoffeeScript
-      jQuery
-      HAML
-    database_list: |
-      PostgresSQL  
-    ruby_gems_list: |
-      Simple Form
-      Devise
-      Figaro
-      Better Errors
-      Guard
-      Paper Clip
-      Friendly_id
-      Xray-rails
-      Geocoder 
-    tools_list: |
-      Git
-      Pry
-      RVM
-      Sublime Text
-      ZSH
-      iTerm
-      Foundation
-      Bootstrap 3
-      Font-awesome
-      CodeClimate
-      Gemnasium  
-    testing_list: |
-      RSpec
       MiniTest
-      Factory Girl
-      Ffaker
-      Simplecov  
+      Haml
+      PostgresSQL
+      Foundation
+      Git
+      Better Erros
+      Bootstrap
+      Ungit
+      SCSS
+    
+
+    # framework_list: |
+    #   Ruby on Rails
+    # languages_list: |
+    #   HTML
+    #   CSS
+    #   SCSS
+    #   JavaScript
+    #   CoffeeScript
+    #   jQuery
+    #   HAML
+    # database_list: |
+    #   PostgresSQL  
+    # ruby_gems_list: |
+    #   Simple Form
+    #   Devise
+    #   Figaro
+    #   Better Errors
+    #   Guard
+    #   Paper Clip
+    #   Friendly_id
+    #   Xray-rails
+    #   Geocoder 
+    # tools_list: |
+    #   Git
+    #   Pry
+    #   RVM
+    #   Sublime Text
+    #   ZSH
+    #   iTerm
+    #   Foundation
+    #   Bootstrap 3
+    #   Font-awesome
+    #   CodeClimate
+    #   Gemnasium  
+    # testing_list: |
+    #   RSpec
+    #   MiniTest
+    #   Factory Girl
+    #   Ffaker
+    #   Simplecov  
 
   contact:
     headline: "Contact me" 
@@ -67,7 +93,7 @@ en:
     message: "Message" 
     send: "Send"
   footer:
-    headline: "Find me here :D"
+    headline: "Let's Keep in Touch!"
   navbar:
     project: "Project"
     about: "About"
