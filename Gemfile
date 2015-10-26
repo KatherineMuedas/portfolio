@@ -17,7 +17,7 @@ gem "paperclip", "~> 4.2"
 gem 'simple_form'
 gem 'devise'
 gem "figaro"
-gem "aws-sdk"
+gem "aws-sdk", '< 2'
 gem 'asset_sync'
 gem 'haml'
 gem 'html2haml'
