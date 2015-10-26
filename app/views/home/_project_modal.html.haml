@@ -9,7 +9,7 @@
         .row
           .col-lg-8.col-lg-offset-2
             .modal-body
-              %h2= project.title
+              %h2.text-uppercase= project.title
               %hr.star-primary/
               .carousel.slide{"id" => "carousel-#{project.title.parameterize}", "data-ride" => "carousel"}
                 / Indicators
