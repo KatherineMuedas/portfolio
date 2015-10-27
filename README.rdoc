@@ -4,7 +4,7 @@ My portfolio
 
 Website showing personal projects.
 
-Website http://katherinemuedas.herokuapp.com
+Website http://katherinemuedas.com
 
 - Internationalizing a rails application in english and spanish. 
 - Uses HAML and designs with Bootstrap.
