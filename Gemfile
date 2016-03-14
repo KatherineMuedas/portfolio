@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.0'
+ruby '2.3.0'
 
 gem 'rails', '4.1.4'
 gem 'pg'
@@ -30,7 +30,7 @@ end
 
 group :development do
   gem "better_errors"
-  gem "binding_of_caller" 
+  gem "binding_of_caller"
   gem 'quiet_assets'
   gem 'spring'
 
